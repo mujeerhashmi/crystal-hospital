@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include crystal_hospital *.css
+recursive-include crystal_hospital *.csv
+recursive-include crystal_hospital *.html
+recursive-include crystal_hospital *.ico
+recursive-include crystal_hospital *.js
+recursive-include crystal_hospital *.json
+recursive-include crystal_hospital *.md
+recursive-include crystal_hospital *.png
+recursive-include crystal_hospital *.py
+recursive-include crystal_hospital *.svg
+recursive-include crystal_hospital *.txt
+recursive-exclude crystal_hospital *.pyc
