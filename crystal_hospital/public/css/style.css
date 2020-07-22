@@ -1360,21 +1360,44 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing .box {
-  padding: 20px;
+  padding: 10px;
   background: #fff;
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.pricing .box::before {
+  content: '';
+  position: absolute;
+  background: #d9f1f2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.pricing .box:hover::before {
+  background: #3fbbc0;
+  top: 0;
+  border-radius: 0px;
+}
+
+.pricing .row {
+  padding-bottom: 20px;
 }
 
 .pricing h3 {
-  font-weight: 400;
+  font-weight: 600;
   margin: -20px -20px 20px -20px;
   padding: 20px 15px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
   color: #777777;
   background: #f8f8f8;
 }
@@ -1403,13 +1426,22 @@ section {
   padding: 0;
   list-style: none;
   color: #444444;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
+  text-align: left;
+  line-height: 12px;
+  font-size: 16px;
 }
 
 .pricing ul li {
-  padding-bottom: 16px;
+  padding-bottom: 10px;
+}
+
+.pricing ul li span{
+  color: #777777;
+  font-weight: bold;
+}
+
+.pricing .box:hover ul li span {
+  color: #444444;  
 }
 
 .pricing ul i {
@@ -1449,7 +1481,7 @@ section {
 }
 
 .pricing .featured h3 {
-  color: #fff;
+  color: #444444;
   background: #3fbbc0;
 }
 
