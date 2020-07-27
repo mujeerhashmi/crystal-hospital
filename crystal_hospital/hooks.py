@@ -11,6 +11,50 @@ app_color = "grey"
 app_email = "info@4csolutions.in"
 app_license = "MIT"
 
+fixtures = [
+    {
+        "doctype": "Custom Script",
+        "filters" : [
+            [
+                "name",
+                "in",
+                [
+                    "Sales Invoice-Client"                    
+                ]
+            ]
+        ]
+    },
+    {
+        "doctype": "Custom Field",
+        "filters" : [
+            [
+                "name",
+                "in",
+                [
+                    "InPatient Record-healthcare_practitioner_name",
+                    "InPatient Record-discharge_practitioner_name"
+                ]
+            ]
+        ]
+    },
+    {
+		"doctype": "Print Format",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"CMH Patient",
+                    "CMH Encounter",
+                    "CMH Invoice",
+                    "CMH InPatient",
+                    "CMH Discharge"
+				]
+			]
+		]
+	}
+]
+
 # Includes in <head>
 # ------------------
 
