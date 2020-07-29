@@ -23,20 +23,7 @@ fixtures = [
                 ]
             ]
         ]
-    },
-    {
-        "doctype": "Custom Field",
-        "filters" : [
-            [
-                "name",
-                "in",
-                [
-                    "InPatient Record-healthcare_practitioner_name",
-                    "InPatient Record-discharge_practitioner_name"
-                ]
-            ]
-        ]
-    },
+    },    
     {
 		"doctype": "Print Format",
 		"filters": [
