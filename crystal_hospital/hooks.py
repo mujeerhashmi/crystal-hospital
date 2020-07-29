@@ -19,7 +19,7 @@ fixtures = [
                 "name",
                 "in",
                 [
-                    "Sales Invoice-Client"                    
+                    "Patient-Client"                    
                 ]
             ]
         ]

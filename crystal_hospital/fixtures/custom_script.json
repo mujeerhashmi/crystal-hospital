@@ -2,12 +2,12 @@
  {
   "docstatus": 0,
   "doctype": "Custom Script",
-  "dt": "Sales Invoice",
-  "modified": "2020-07-28 00:06:32.448352",
-  "name": "Sales Invoice-Client",
+  "dt": "Patient",
+  "modified": "2020-07-30 00:40:09.390809",
+  "name": "Patient-Client",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
-  "script": "frappe.ui.form.on('Sales Invoice', {\n\trefresh(frm) {\n\t\tif (frm.doc.patient) {\n\t\t    frappe.db.get_doc('Patient', frm.doc.patient)\n\t\t    .then (doc => {\n\t\t        frm.set_value('selling_price_list', doc.patient_category);\n\t\t    });\n\t\t}\n\t}\n});"
+  "script": "frappe.ui.form.on('Patient', {\n\tpatient_category(frm) {\n\t    frm.set_value('default_price_list',frm.doc.patient_category);\n\t}\n});"
  }
 ]
