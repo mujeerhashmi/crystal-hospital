@@ -19,11 +19,37 @@ fixtures = [
                 "name",
                 "in",
                 [
-                    "Patient-Client"                    
+                    "Patient-Client"
                 ]
             ]
         ]
-    },    
+    },
+    {
+        "doctype": "Role Profile",
+        "filters" : [
+            [
+                "name",
+                "in",
+                [
+                    "CMH Manager",
+                    "CMH Reception"
+                ]
+            ]
+        ]
+    },
+    {
+        "doctype": "Role",
+        "filters" : [
+            [
+                "name",
+                "in",
+                [
+                    "CMH Manager",
+                    "CMH Reception"
+                ]
+            ]
+        ]
+    }, 
     {
 		"doctype": "Print Format",
 		"filters": [

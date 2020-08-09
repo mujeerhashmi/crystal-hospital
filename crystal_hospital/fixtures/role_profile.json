@@ -1,0 +1,272 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2020-08-09 15:16:23.663314",
+  "name": "CMH Manager",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "CMH Manager",
+  "roles": [
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Dashboard Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Fleet Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Healthcare Administrator"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Expense Approver"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Fulfillment User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Inbox User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Laboratory User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Leave Approver"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Loan Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "LabTest Approver"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Newsletter Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Nursing User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Physician"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Report Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Sales Master Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Script Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Support Team"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Website Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "System Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Sales User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Quality Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Prepared Report User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "HR User"
+   },
+   {
+    "parent": "CMH Manager",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "CMH Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2020-08-09 15:15:55.574830",
+  "name": "CMH Reception",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "role_profile": "CMH Reception",
+  "roles": [
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Healthcare Administrator"
+   },
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Nursing User"
+   },
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Physician"
+   },
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Sales User"
+   },
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "CMH Reception",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "CMH Reception"
+   }
+  ]
+ }
+]
