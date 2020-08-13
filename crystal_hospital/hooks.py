@@ -147,7 +147,11 @@ home_page = "index"
 # 		"on_trash": "method"
 #	}
 # }
-
+doc_events = {
+    "Inpatient Record": {
+        "validate": "crystal_hospital.utils.validate_ipservices_dates"
+    }
+}
 # Scheduled Tasks
 # ---------------
 
@@ -187,8 +191,17 @@ home_page = "index"
 # override_doctype_dashboards = {
 # 	"Task": "crystal_hospital.task.get_dashboard_data"
 # }
-
+override_whitelisted_methods = {
+    "erpnext.healthcare.doctype.inpatient_record.inpatient_record.schedule_discharge": "crystal_hospital.utils.schedule_discharge",
+    "erpnext.healthcare.utils.get_healthcare_services_to_invoice": "crystal_hospital.utils.get_healthcare_services_to_invoice"
+}
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
+jenv = {
+    "methods": [
+        "format_duration:frappe.utils.format_duration",
+        "time_diff_in_seconds:frappe.utils.time_diff_in_seconds"
+    ]
+}
