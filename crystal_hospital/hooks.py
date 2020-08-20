@@ -13,6 +13,28 @@ app_license = "MIT"
 
 fixtures = [
     {
+        "doctype": "Property Setter",
+        "filters" : [
+            [
+                "doc_type",
+                "in",
+                [
+                    "Patient",
+                    "Inpatient Record",
+                    "Sales Invoice",
+                    "Purchase Invoice"
+                ]
+            ],
+            [
+                "field_name",
+                "in",
+                [
+                    "naming_series"
+                ]
+            ]
+        ]
+    },
+    {
         "doctype": "Custom Script",
         "filters" : [
             [
@@ -20,6 +42,18 @@ fixtures = [
                 "in",
                 [
                     "Patient-Client"
+                ]
+            ]
+        ]
+    },
+    {
+        "doctype": "Desk Page",
+        "filters" : [
+            [
+                "name",
+                "in",
+                [
+                    "Healthcare"
                 ]
             ]
         ]

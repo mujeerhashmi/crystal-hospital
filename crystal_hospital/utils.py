@@ -82,18 +82,22 @@ def get_ip_services_to_invoice(patient, company):
 	for ip_service in ip_services:
 		service_type = frappe.get_cached_doc('InPatient Service', ip_service.inpatient_service)
 		if service_type and service_type.is_billable:
-			hours_occupied = time_diff_in_hours(ip_service.end_date, ip_service.start_date)
-			qty = 0.5
-			if hours_occupied > 0:
-				actual_qty = hours_occupied / service_type.no_of_hours
-				floor = math.floor(actual_qty)
-				decimal_part = actual_qty - floor
-				if decimal_part > 0.5:
-					qty = rounded(floor + 1, 1)
-				elif decimal_part < 0.5 and decimal_part > 0:
-					qty = rounded(floor + 0.5, 1)
-				if qty <= 0:
-					qty = 0.5
+			if service_type.uom == 'Nos':
+				days_used = date_diff(ip_service.end_date, ip_service.start_date) + 1
+				qty = service_type.uom_per_day * days_used
+			else:
+				hours_occupied = time_diff_in_hours(ip_service.end_date, ip_service.start_date)
+				qty = 0.5
+				if hours_occupied > 0:
+					actual_qty = hours_occupied / service_type.no_of_hours
+					floor = math.floor(actual_qty)
+					decimal_part = actual_qty - floor
+					if decimal_part > 0.5:
+						qty = rounded(floor + 1, 1)
+					elif decimal_part < 0.5 and decimal_part > 0:
+						qty = rounded(floor + 0.5, 1)
+					if qty <= 0:
+						qty = 0.5
 			services_to_invoice.append({
 				'reference_type': 'IP Services',
 				'reference_name': ip_service.name,
