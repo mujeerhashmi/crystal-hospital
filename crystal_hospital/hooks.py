@@ -11,29 +11,7 @@ app_color = "grey"
 app_email = "info@4csolutions.in"
 app_license = "MIT"
 
-fixtures = [
-    {
-        "doctype": "Property Setter",
-        "filters" : [
-            [
-                "doc_type",
-                "in",
-                [
-                    "Patient",
-                    "Inpatient Record",
-                    "Sales Invoice",
-                    "Purchase Invoice"
-                ]
-            ],
-            [
-                "field_name",
-                "in",
-                [
-                    "naming_series"
-                ]
-            ]
-        ]
-    },
+fixtures = [    
     {
         "doctype": "Custom Script",
         "filters" : [
