@@ -105,3 +105,9 @@ def get_ip_services_to_invoice(patient, company):
 			})
 
 	return services_to_invoice
+
+def get_patient_dashboard_data(data):
+    for x in data['transactions']:
+        if (x['label'] == 'Billing'):
+            x['items'].append('Payment Entry')
+    return data
