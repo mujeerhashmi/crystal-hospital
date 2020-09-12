@@ -210,9 +210,6 @@ override_whitelisted_methods = {
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
-override_doctype_dashboards = {
-    "Patient": "crystal_hospital.utils.get_patient_dashboard_data"
-}
 
 jenv = {
     "methods": [
