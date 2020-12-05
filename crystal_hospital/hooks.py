@@ -61,23 +61,7 @@ fixtures = [
                 ]
             ]
         ]
-    }, 
-    {
-		"doctype": "Print Format",
-		"filters": [
-			[
-				"name",
-				"in",
-				[
-					"CMH Patient",
-                    "CMH Encounter",
-                    "CMH Invoice",
-                    "CMH InPatient",
-                    "CMH Discharge"
-				]
-			]
-		]
-	}
+    }
 ]
 
 # Includes in <head>
@@ -159,11 +143,7 @@ home_page = "index"
 # 		"on_trash": "method"
 #	}
 # }
-doc_events = {
-    "Inpatient Record": {
-        "validate": "crystal_hospital.utils.validate_ipservices_dates"
-    }
-}
+
 # Scheduled Tasks
 # ---------------
 
@@ -204,7 +184,6 @@ doc_events = {
 # 	"Task": "crystal_hospital.task.get_dashboard_data"
 # }
 override_whitelisted_methods = {
-    "erpnext.healthcare.doctype.inpatient_record.inpatient_record.schedule_discharge": "crystal_hospital.utils.schedule_discharge",
     "erpnext.healthcare.utils.get_healthcare_services_to_invoice": "crystal_hospital.utils.get_healthcare_services_to_invoice"
 }
 # exempt linked doctypes from being automatically cancelled

@@ -47,7 +47,7 @@
    "parenttype": null,
    "property": "default_print_format",
    "property_type": "Data",
-   "value": "CMH Encounter"
+   "value": "Patient OPD"
   }
  ],
  "sync_on_migrate": 1

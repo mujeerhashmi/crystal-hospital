@@ -422,7 +422,7 @@
    "parenttype": null,
    "property": "default_print_format",
    "property_type": "Data",
-   "value": "CMH Patient"
+   "value": "Patient Registration"
   }
  ],
  "sync_on_migrate": 1
