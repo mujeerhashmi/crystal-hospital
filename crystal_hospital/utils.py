@@ -58,6 +58,8 @@ def get_inpatient_services_to_invoice(patient, company):
 					qty = rounded(floor + 1, 1)
 				elif decimal_part < 0.5 and decimal_part > 0:
 					qty = rounded(floor + 0.5, 1)
+				elif decimal_part == 0:
+					qty = floor
 				if qty <= 0:
 					qty = 0.5
 			services_to_invoice.append({
@@ -86,7 +88,7 @@ def get_ip_services_to_invoice(patient, company):
 
 	for ip_service in ip_services:
 		service_type = frappe.get_cached_doc('InPatient Service', ip_service.inpatient_service)
-		if service_type and service_type.is_billable:
+		if service_type and service_type.is_billable:			
 			if service_type.uom == 'Nos':
 				if service_type.uom_per_day > 0:
 					days_used = date_diff(ip_service.end_date, ip_service.start_date) + 1
@@ -104,6 +106,8 @@ def get_ip_services_to_invoice(patient, company):
 						qty = rounded(floor + 1, 1)
 					elif decimal_part < 0.5 and decimal_part > 0:
 						qty = rounded(floor + 0.5, 1)
+					elif decimal_part == 0:
+						qty = floor
 					if qty <= 0:
 						qty = 0.5
 

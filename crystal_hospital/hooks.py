@@ -13,30 +13,6 @@ app_license = "MIT"
 
 fixtures = [    
     {
-        "doctype": "Custom Script",
-        "filters" : [
-            [
-                "name",
-                "in",
-                [
-                    "Patient-Client"
-                ]
-            ]
-        ]
-    },
-    {
-        "doctype": "Desk Page",
-        "filters" : [
-            [
-                "name",
-                "in",
-                [
-                    "Healthcare"
-                ]
-            ]
-        ]
-    },
-    {
         "doctype": "Role Profile",
         "filters" : [
             [
